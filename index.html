@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Minorities in STEM - RSO</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta name="viewport" content="width = device-wdith, initiali-scale = 1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<section id="banner">
+  <img src="images/Untitled_Artwork.png" class="logo">
+  <div class="banner-text">
+    <h1>Minoties in STEM - UIUC</h1>
+    <p>Welcome to our safe STEM environmet for all!</p>
+    <div class="banner-btn">
+      <a href="#banner"><span></span>Read More</a>
+    </div>
+  </div>
+</section>
+<div id="sideNav">
+  <nav>
+  <ul>
+    <li><a href="#banner">HOME</a></li>
+    <li><a href="#aboutus">ABOUT US</a></li>
+    <li><a href="#meeting">MEATING TIMES AND ZOOM</a></li>
+    <li><a href="#footer">CONTACT US</a></li>
+  </ul>
+  </nav>
+</div>
+<div id="menuBtn">
+  <img src="images/menu.png" id="menu">
+</div>
+<section id="aboutus">
+  <div class="about-title">
+    <h1>About Us</h1>
+  </div>
+  <div class="about-des-img">
+    <div class="about-icon"></div>
+    <div class="about-descrip">
+      <p>The Minorities in STEM will serve as a place for students to come together in support of each other, make friends with similar interests/future plans, and learn more about different careers in STEM. This RSO will be open to all students who are in a STEM major or are considering a STEM major but will be targeted towards minority students. Having one of the many majors that fall under STEM is difficult as is and sometimes by simply being a minority makes it even more difficult on students. Minorities in STEM will allow undergraduates to speak openly about their struggles, find ways to seek academic help (whether it be through finding a tutor or through creating study groups), and learn new skills through the workshops that will be hosted. Another goal of this RSO is to provide students with different volunteer opportunities by reaching out to local organizations and in the community. </p>
+    </div>
+    <div class="about-img">
+      <img src="images/students.jpg">
+    </div>
+  </div>
+</section>
+<section id="meeting">
+  <div class=meeting-title>
+    <h1>Zoom Meetings</h1>
+  </div>
+  <div class="meeting-table">
+    <p>*Insert Zoom table here*</p>
+  </div>
+</section>
+<section id="footer">
+  <div class="footer-title">
+    <p>CONTACT US</p>
+  </div>
+  <div class="social-links">
+    <a href="https://www.instagram.com/minoritiesinstemuiuc/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/groups/1115985395584610/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/groups/1115985395584610/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+</section>
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+sideNav.style.right = "-250px";
+menuBtn.onclick = function(){
+  if(sideNav.style.right == "-250px") {
+    sideNav.style.right = "0";
+    menu.src = "images/close.png";
+  }
+  else{
+    sideNav.style.right = "-250px";
+    menu.src = "images/menu.png"
+  }
+}
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+</body>
+</html>
